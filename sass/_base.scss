@@ -1,0 +1,197 @@
+/**
+ * Base.scss
+ * Handle base html styles (body, p, a, etc). 
+ * These should generally be unmodified tags rather than classnames or ids
+ * except for a couple exceptions
+ * 
+ */
+
+body {
+  background-color: $gray;
+  color: #222;
+  font-family: $sans-stack;
+  font-size: 100%; // 16px
+  line-height: 1.6;
+  text-rendering:optimizeLegibility; // helps with kerning and ligatures
+}
+
+a {
+  color: $aqua;
+  text-decoration: none;
+
+  &:hover {
+    color: $aqua-dark;
+  }
+
+  &.quiet {
+    color: #999;
+  }
+
+  &.quiet:hover {
+    color: $aqua;
+  }
+}
+
+.break {
+  display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.content.row {
+  box-shadow: 0 -27px 23px -26px rgba(0, 0, 0, 0.5);
+  top: -2em;
+  background-color: $gray;
+  position: relative;
+  overflow: hidden;
+}
+
+
+p.first {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.extra-margin-bottom {
+  margin-bottom: 2em;
+}
+
+.secondary-links {
+  font-size: .9em;
+  padding-top: 0.75em;
+  a {
+    color: #333;
+    transition: color .5s;
+  }
+  a:hover {
+    color: $aqua-dark;
+  }
+  .div-left {
+    border-left: 1px solid #ccc;
+    padding-left:1em;
+    margin-left: 1em;
+  }
+}
+
+p {
+  .emphasis {
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+.quote-box {
+  margin: 2em 0 3em;
+  text-align: center;
+}
+
+.quote {
+  font-family: Georgia, $sans-stack;
+  font-size: 1.25em;
+  padding: 0 3em;
+  margin-bottom:.5em;
+  quotes: "“" "”" "‘" "’";
+}
+.quote:before {
+  content: '';
+  background: transparent url(../images/lquo.gif) no-repeat left bottom;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.quote:after {
+  content: '';
+  background: transparent url(../images/rquo.gif) no-repeat right bottom;
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+}
+
+.baseline {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+.fancy {
+  border-bottom: 1px solid #ccc;
+  margin: 0 3em;
+}
+.source {
+  background-color: $gray;
+  font-family: $sans-stack;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto -12px auto;
+  width: 280px;
+  span{
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.sample-conversation {
+  padding: 1em 2em;
+  margin: 2em 0;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  .voice {
+    font-weight: 700;
+  }
+  .row {
+    margin: 1em 0;
+    overflow: hidden;
+  }
+  .translated {
+    color: #999;
+    font-style: italic;
+    &:before {
+      content: "(";
+    }
+    &:after {
+      content: ")";
+    }
+  }
+}
+
+.revealer a {
+  cursor: pointer;
+}
+.centered {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+.demo-only {
+  cursor: not-allowed;
+}
+#demo-only .callout {
+  color: #fff;
+  width: 40%;
+  margin: 10em auto;
+}
+
+.schedule-block {
+ background-color: #ddd;
+  padding-bottom: 2em;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.browse-coaches {
+  margin-bottom: 1.5em;
+}
+
+.ital {
+  font-style: italic;
+}

@@ -1,0 +1,81 @@
+/*
+ * Slideshow
+ */
+
+.arrow-container {
+  background-color: $gray;
+  cursor: pointer;
+  padding-top: 0.333333em;
+  width: 2em;
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}
+
+.left-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #999 transparent transparent;
+}
+
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #999;
+}
+
+$arrow: $aqua;
+
+.arrow-container:hover .left-arrow {
+  border-color: transparent $arrow transparent transparent;
+}
+.arrow-container:hover .right-arrow {
+  border-color: transparent transparent transparent $arrow;
+}
+
+
+.slideshow{
+
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+
+  .controls {
+    border-bottom: 1px solid #ccc;
+
+  }
+
+  .quantity {
+    font-weight: 700;
+    margin-bottom: -12px;
+    text-align: center;
+
+    .left-arrow {
+      background-color: $gray;
+      float: left;
+    }
+    .right-arrow {
+      background-color: $gray;
+      float: right;
+    }
+    span.text {
+      background-color: $gray;
+      padding: .5em 1em;
+    }
+  }
+}
+
+.get-started {
+  background-color: $aqua;
+  border-radius: 2px;
+  text-align: center;
+  &:hover {
+    background-color: #222;
+  }
+}

@@ -1,0 +1,59 @@
+/**
+ * Masthead
+ */
+
+.masthead {
+  background-color: #fff;
+  height: 4em;
+}
+
+.left-section {
+  float: left;
+}
+
+.right-section {
+  float: right;
+}
+
+.brand,
+.brand a {
+  color: $gold;
+  font-family: $sans-bold;
+  line-height: 4rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  span {
+    color: $teale;
+  }
+}
+
+footer .brand,
+footer .brand a {
+  line-height: 1.6;
+}
+
+.utility {
+  color: $text-light;
+  font-size: 0.9375em;
+  position: relative;
+  top:1em;
+}
+
+.coach {
+  background-color: #f7e193;
+  border-radius: 2px;
+  border-left: none !important;
+  color: #fff;
+  padding: 0.25em 1em;
+
+  &:hover {
+    background-color: #f2c203;
+  }
+
+}
+
+.login {
+  span {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,51 @@
+/*
+ * Headings
+ */
+
+h1, h2, h3, h4, h5 {}
+h1 {
+  font-weight: 300;
+  font-size: 2.75rem;
+  line-height: 1.25;
+  margin-top: .35em;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2em
+}
+
+h3 {
+  font-size: 2.125em;
+  font-weight: 300;
+  margin: 0.65em 0;
+}
+
+h3.extra {
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+h5, .h5{
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.quiet {
+  font-size: 18px;
+}
+
+.tight {
+  margin-bottom: 0;
+}
+
+.section-head {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .5em;
+}
