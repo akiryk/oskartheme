@@ -42,7 +42,7 @@ get_header(); ?>
   </div>
   <div class="content row">
     <div class="large-4 med-6 columns">
-      <h3>Learn</h3>
+      <h3>Practice & Improve</h3>
       <p class="first">Improve your foreign language skills by having online video conversations with native speakers.
       </p>
       <a href="http://language-up.com/?page_id=15" class="button">More About Learning</a>
