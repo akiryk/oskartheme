@@ -27,12 +27,12 @@
 	    <div class="large-12 columns">
 	      <div class="left-section">
 	        <div class="brand">
-	          Language<span class="strong">Up</span>
+	        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Language<span class="strong">Up</span></a>
 	        </div>
 	      </div>
 	      <div class="right-section">
 	        <ul class="horizontal-list utility">
-	          <li class="coach demo-only">Become A Coach</li>
+	          <li class="coach"><a href="http://language-up.com/?page_id=12">Become A Coach</a></li>
 	        </ul>
 	      </div>
 	    </div>

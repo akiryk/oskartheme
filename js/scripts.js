@@ -6,7 +6,7 @@
     $currText,
     $languages,
     origHeight = "58px",
-    TIME_LAG = 3500;
+    TIME_LAG = 2800;
 
 
   $expand.click(function(){
@@ -29,14 +29,24 @@
   function sendToPage(page){
     window.location.href = page;
   };
-  function sendToCoachPage(){
-    sendToPage('signup-form.html');
+
+  function sendToFrenchPage(){
+    sendToPage('http://language-up.com/?page_id=2');
   };
+
+  function sendToOtherPage(){
+    sendToPage('http://language-up.com/?page_id=20');
+  };
+
   $('#go-phrase').on('click', function(){
     $('#load-view').css('display', 'block');
     language = language != 'Other' ? language: "whatever you'd like";
     $('#load-language').text(language);
-    setTimeout( sendToCoachPage, TIME_LAG);
+    var fn = sendToOtherPage;
+    if (language == 'French'){
+      fn = sendToFrenchPage;
+    }
+    setTimeout( fn, TIME_LAG);
   });
 
   $reasonText = $('#reason-text');

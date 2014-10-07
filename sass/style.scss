@@ -6,7 +6,8 @@
  */
 
 @import "compass";
-@import "modules/normalize";
+// @import "modules/foundation/functions";
+// @import "modules/foundation/foundation";
 @import "modules/vars";
 @import "base";
 @import "layout";
@@ -34,4 +35,22 @@
 .screen-reader-text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $sans-stack;
+}
+
+// Pages
+
+.page-content {
+  margin: 1em;
+  @media screen and (min-width: 40em){
+    max-width: 40em;    
+    margin: 1em auto;
+  }
+}
+
+.entry-title {
+  margin-bottom: .5em;
 }

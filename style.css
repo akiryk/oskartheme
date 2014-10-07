@@ -5,440 +5,6 @@
  *
  *
  */
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 9, sass/modules/_normalize.scss */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-/* line 19, sass/modules/_normalize.scss */
-body {
-  margin: 0;
-}
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 41, sass/modules/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-/* line 53, sass/modules/_normalize.scss */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 63, sass/modules/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-/* line 74, sass/modules/_normalize.scss */
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-/* line 85, sass/modules/_normalize.scss */
-a {
-  background: transparent;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 94, sass/modules/_normalize.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 105, sass/modules/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 114, sass/modules/_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 122, sass/modules/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 131, sass/modules/_normalize.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 140, sass/modules/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 149, sass/modules/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 158, sass/modules/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 165, sass/modules/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 169, sass/modules/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 180, sass/modules/_normalize.scss */
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 188, sass/modules/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 199, sass/modules/_normalize.scss */
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 207, sass/modules/_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-/* line 217, sass/modules/_normalize.scss */
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-/* line 228, sass/modules/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 252, sass/modules/_normalize.scss */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10.
- */
-/* line 262, sass/modules/_normalize.scss */
-button {
-  overflow: visible;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8+, and Opera
- * Correct `select` style inheritance in Firefox.
- */
-/* line 274, sass/modules/_normalize.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 289, sass/modules/_normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 299, sass/modules/_normalize.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 308, sass/modules/_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 318, sass/modules/_normalize.scss */
-input {
-  line-height: normal;
-}
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-/* line 331, sass/modules/_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-/* line 343, sass/modules/_normalize.scss */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 353, sass/modules/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-/* line 367, sass/modules/_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 375, sass/modules/_normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 386, sass/modules/_normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9.
- */
-/* line 395, sass/modules/_normalize.scss */
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-/* line 404, sass/modules/_normalize.scss */
-optgroup {
-  font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 415, sass/modules/_normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 421, sass/modules/_normalize.scss */
-td,
-th {
-  padding: 0;
-}
-
 /**
  * Vars
  */
@@ -456,40 +22,41 @@ body {
   font-family: "Open Sans", "OpenSans" "Helvetica", sans-serif;
   font-size: 100%;
   line-height: 1.6;
+  margin: 0;
   text-rendering: optimizeLegibility;
 }
 
-/* line 18, sass/_base.scss */
+/* line 19, sass/_base.scss */
 a {
   color: #1ebae7;
   text-decoration: none;
 }
-/* line 22, sass/_base.scss */
+/* line 23, sass/_base.scss */
 a:hover {
   color: #067798;
 }
-/* line 26, sass/_base.scss */
+/* line 27, sass/_base.scss */
 a.quiet {
   color: #999;
 }
-/* line 30, sass/_base.scss */
+/* line 31, sass/_base.scss */
 a.quiet:hover {
   color: #1ebae7;
 }
 
-/* line 35, sass/_base.scss */
+/* line 36, sass/_base.scss */
 .break {
   display: block;
 }
 
-/* line 39, sass/_base.scss */
+/* line 40, sass/_base.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 43, sass/_base.scss */
+/* line 44, sass/_base.scss */
 .content.row {
   box-shadow: 0 -27px 23px -26px rgba(0, 0, 0, 0.5);
   top: -2em;
@@ -498,55 +65,55 @@ a.quiet:hover {
   overflow: hidden;
 }
 
-/* line 52, sass/_base.scss */
+/* line 53, sass/_base.scss */
 p.first {
   margin-top: 0;
 }
 
-/* line 56, sass/_base.scss */
+/* line 57, sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 60, sass/_base.scss */
+/* line 61, sass/_base.scss */
 .extra-margin-bottom {
   margin-bottom: 2em;
 }
 
-/* line 64, sass/_base.scss */
+/* line 65, sass/_base.scss */
 .secondary-links {
   font-size: .9em;
   padding-top: 0.75em;
 }
-/* line 67, sass/_base.scss */
+/* line 68, sass/_base.scss */
 .secondary-links a {
   color: #333;
   transition: color .5s;
 }
-/* line 71, sass/_base.scss */
+/* line 72, sass/_base.scss */
 .secondary-links a:hover {
   color: #067798;
 }
-/* line 74, sass/_base.scss */
+/* line 75, sass/_base.scss */
 .secondary-links .div-left {
   border-left: 1px solid #ccc;
   padding-left: 1em;
   margin-left: 1em;
 }
 
-/* line 82, sass/_base.scss */
+/* line 83, sass/_base.scss */
 p .emphasis {
   font-weight: 700;
   font-style: italic;
 }
 
-/* line 88, sass/_base.scss */
+/* line 89, sass/_base.scss */
 .quote-box {
   margin: 2em 0 3em;
   text-align: center;
 }
 
-/* line 93, sass/_base.scss */
+/* line 94, sass/_base.scss */
 .quote {
   font-family: Georgia, "Open Sans", "OpenSans" "Helvetica", sans-serif;
   font-size: 1.25em;
@@ -555,7 +122,7 @@ p .emphasis {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 100, sass/_base.scss */
+/* line 101, sass/_base.scss */
 .quote:before {
   content: '';
   background: transparent url(../images/lquo.gif) no-repeat left bottom;
@@ -564,7 +131,7 @@ p .emphasis {
   display: inline-block;
 }
 
-/* line 108, sass/_base.scss */
+/* line 109, sass/_base.scss */
 .quote:after {
   content: '';
   background: transparent url(../images/rquo.gif) no-repeat right bottom;
@@ -573,19 +140,19 @@ p .emphasis {
   display: inline-block;
 }
 
-/* line 116, sass/_base.scss */
+/* line 117, sass/_base.scss */
 .baseline {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1em;
 }
 
-/* line 121, sass/_base.scss */
+/* line 122, sass/_base.scss */
 .fancy {
   border-bottom: 1px solid #ccc;
   margin: 0 3em;
 }
 
-/* line 125, sass/_base.scss */
+/* line 126, sass/_base.scss */
 .source {
   background-color: whitesmoke;
   font-family: "Open Sans", "OpenSans" "Helvetica", sans-serif;
@@ -594,13 +161,13 @@ p .emphasis {
   margin: 0 auto -12px auto;
   width: 280px;
 }
-/* line 132, sass/_base.scss */
+/* line 133, sass/_base.scss */
 .source span {
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 138, sass/_base.scss */
+/* line 139, sass/_base.scss */
 .sample-conversation {
   padding: 1em 2em;
   margin: 2em 0;
@@ -608,73 +175,73 @@ p .emphasis {
   overflow: hidden;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
-/* line 144, sass/_base.scss */
+/* line 145, sass/_base.scss */
 .sample-conversation .voice {
   font-weight: 700;
 }
-/* line 147, sass/_base.scss */
+/* line 148, sass/_base.scss */
 .sample-conversation .row {
   margin: 1em 0;
   overflow: hidden;
 }
-/* line 151, sass/_base.scss */
+/* line 152, sass/_base.scss */
 .sample-conversation .translated {
   color: #999;
   font-style: italic;
 }
-/* line 154, sass/_base.scss */
+/* line 155, sass/_base.scss */
 .sample-conversation .translated:before {
   content: "(";
 }
-/* line 157, sass/_base.scss */
+/* line 158, sass/_base.scss */
 .sample-conversation .translated:after {
   content: ")";
 }
 
-/* line 163, sass/_base.scss */
+/* line 164, sass/_base.scss */
 .revealer a {
   cursor: pointer;
 }
 
-/* line 166, sass/_base.scss */
+/* line 167, sass/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 169, sass/_base.scss */
+/* line 170, sass/_base.scss */
 .hidden {
   display: none;
 }
 
-/* line 173, sass/_base.scss */
+/* line 174, sass/_base.scss */
 .demo-only {
   cursor: not-allowed;
 }
 
-/* line 176, sass/_base.scss */
+/* line 177, sass/_base.scss */
 #demo-only .callout {
   color: #fff;
   width: 40%;
   margin: 10em auto;
 }
 
-/* line 182, sass/_base.scss */
+/* line 183, sass/_base.scss */
 .schedule-block {
   background-color: #ddd;
   padding-bottom: 2em;
 }
 
-/* line 187, sass/_base.scss */
+/* line 188, sass/_base.scss */
 .strong {
   font-weight: 700;
 }
 
-/* line 191, sass/_base.scss */
+/* line 192, sass/_base.scss */
 .browse-coaches {
   margin-bottom: 1.5em;
 }
 
-/* line 195, sass/_base.scss */
+/* line 196, sass/_base.scss */
 .ital {
   font-style: italic;
 }
@@ -685,21 +252,25 @@ p .emphasis {
 /* line 5, sass/_layout.scss */
 main {
   overflow: auto;
-  margin-bottom: 2em;
 }
 
-/* line 10, sass/_layout.scss */
+/* line 9, sass/_layout.scss */
+.site-content {
+  background-color: #f5f5f5;
+}
+
+/* line 13, sass/_layout.scss */
 .inner-page {
   border-top: 1px solid #eee;
   padding-top: 1.5rem;
 }
 
-/* line 15, sass/_layout.scss */
+/* line 18, sass/_layout.scss */
 .section-body > .large-12 {
   margin-bottom: 2em;
 }
 
-/* line 19, sass/_layout.scss */
+/* line 22, sass/_layout.scss */
 footer {
   width: 100%;
   background: white;
@@ -715,7 +286,6 @@ footer {
 /* line 5, sass/modules/_grid.scss */
 .row {
   clear: both;
-  padding: 0 1.75em;
   max-width: 68em;
   width: 100%;
   margin: 0 auto;
@@ -898,11 +468,15 @@ footer .brand a {
   padding: 0.25em 1em;
 }
 /* line 49, sass/modules/_masthead.scss */
+.coach a {
+  color: #fff;
+}
+/* line 53, sass/modules/_masthead.scss */
 .coach:hover {
   background-color: #f2c203;
 }
 
-/* line 56, sass/modules/_masthead.scss */
+/* line 60, sass/modules/_masthead.scss */
 .login span {
   font-weight: 700;
 }
@@ -1214,114 +788,132 @@ h5, .h5 {
 /**
  * Forms
  */
-/* line 5, sass/modules/_forms.scss */
-label {
-  font-size: 1.125rem;
-  margin-bottom: 1em;
-}
-
-/* line 10, sass/modules/_forms.scss */
-input[type="radio"] {
-  margin-right: 1em;
-}
-
-/* Add height value for select elements to match text input height */
-/* line 15, sass/modules/_forms.scss */
-select {
-  -webkit-appearance: none !important;
-  background-color: #fafafa;
-  background-image: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==");
-  background-repeat: no-repeat;
-  background-position: 97% center;
-  border: 1px solid #cccccc;
-  padding: 0.5rem;
-  font-size: 1em;
-  border-radius: 0;
-  height: 2.5em;
+/* line 18, sass/modules/_forms.scss */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"], input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-family: "Open Sans", "OpenSans" "Helvetica", sans-serif;
+  font-size: 0.9375rem;
+  margin: 0.25rem 0 0.88889rem 0;
+  padding: 0.44444rem;
+  height: 2.05556rem;
   width: 100%;
-}
-
-/* line 30, sass/modules/_forms.scss */
-select.radius {
-  border-radius: 3px;
-}
-
-/* line 32, sass/modules/_forms.scss */
-select:hover {
-  background-color: #f3f3f3;
-  border-color: #999999;
-}
-
-/* Adjust margin for form elements below */
-/* line 37, sass/modules/_forms.scss */
-input[type="file"], input[type="checkbox"], input[type="radio"], select {
-  margin: 0 0 1rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
 
 /* line 40, sass/modules/_forms.scss */
-.fieldset {
-  margin: 1.5em 0;
+textarea {
+  height: auto;
 }
 
-/* line 44, sass/modules/_forms.scss */
-label {
-  margin-right: 2em;
+/* line 49, sass/modules/_forms.scss */
+.wpcf7-form.invalid input[type="text"].wpcf7-validates-as-required.wpcf7-not-valid,
+.wpcf7-form.invalid input[type="password"].wpcf7-validates-as-required.wpcf7-not-valid,
+.wpcf7-form.invalid input[type="email"].wpcf7-validates-as-required.wpcf7-not-valid,
+.wpcf7-form.invalid input[type="number"].wpcf7-validates-as-required.wpcf7-not-valid,
+.wpcf7-form.invalid textarea.wpcf7-validates-as-required.wpcf7-not-valid {
+  border-color: #00bde9;
+  background-color: #eafafd;
+  margin-bottom: 0.25em;
 }
 
-/* line 48, sass/modules/_forms.scss */
-.divider {
-  padding: 0 1.333333em;
+/* line 56, sass/modules/_forms.scss */
+.wpcf7-response-output.wpcf7-validation-errors {
+  margin: -2rem 0 0 0;
+  padding: 0;
+  border: none;
+  color: red;
 }
 
-/* line 52, sass/modules/_forms.scss */
-.divided {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 2em;
+/* line 63, sass/modules/_forms.scss */
+span.wpcf7-not-valid-tip {
+  color: red;
+  font-size: 1em;
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-/* line 57, sass/modules/_forms.scss */
-.scheduler label {
-  margin-right: 2em;
-  font-size: 14px;
-  color: #666;
-  line-height: 2;
+/* line 72, sass/modules/_forms.scss */
+.wpcf7-form.sent > * {
+  display: none;
+}
+
+/* line 75, sass/modules/_forms.scss */
+.wpcf7-form.sent > .wpcf7-mail-sent-ok {
+  background-color: #d5f6d0;
+  border: 1px solid #95e589;
+  color: #106801;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: .5em;
+  display: block;
 }
 
 /**
  * Buttons
  */
-/* line 7, sass/modules/_buttons.scss */
+/* line 8, sass/modules/_buttons.scss */
 button,
 .button,
+.wpcf7-submit,
 .appt {
   background: #1ebae7;
   border: none;
   border-radius: 2px;
   color: #fff;
   display: block;
+  font-size: 1rem;
   padding: 0.5em;
   text-align: center;
   text-decoration: none;
   width: 100%;
   transition: background-color .5s;
 }
-/* line 19, sass/modules/_buttons.scss */
+/* line 21, sass/modules/_buttons.scss */
 button:hover,
 .button:hover,
+.wpcf7-submit:hover,
 .appt:hover {
   background-color: #067798;
   color: #fff;
 }
-/* line 24, sass/modules/_buttons.scss */
+/* line 26, sass/modules/_buttons.scss */
 button.inline,
 .button.inline,
+.wpcf7-submit.inline,
 .appt.inline {
   display: inline;
   padding: 0.5em 1.5em;
   width: auto;
 }
 
-/* line 32, sass/modules/_buttons.scss */
+/* line 34, sass/modules/_buttons.scss */
 .schedule-button {
   margin: 1em 0;
 }
@@ -1625,13 +1217,35 @@ button.inline,
   background-color: #222;
 }
 
-/* line 30, sass/style.scss */
+/* line 31, sass/style.scss */
 .coach {
   padding-left: 1em !important;
 }
 
-/* line 34, sass/style.scss */
+/* line 35, sass/style.scss */
 .screen-reader-text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 40, sass/style.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans", "OpenSans" "Helvetica", sans-serif;
+}
+
+/* line 46, sass/style.scss */
+.page-content {
+  margin: 1em;
+}
+@media screen and (min-width: 40em) {
+  /* line 46, sass/style.scss */
+  .page-content {
+    max-width: 40em;
+    margin: 1em auto;
+  }
+}
+
+/* line 54, sass/style.scss */
+.entry-title {
+  margin-bottom: .5em;
 }

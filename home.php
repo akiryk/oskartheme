@@ -45,20 +45,20 @@ get_header(); ?>
       <h3>Learn</h3>
       <p class="first">Improve your foreign language skills by having online video conversations with native speakers.
       </p>
-      <a href="#learning" class="button">More About Learning</a>
+      <a href="http://language-up.com/?page_id=15" class="button">More About Learning</a>
     </div>
     <div class="large-4 med-6 columns">
       <h3>Coach</h3>
       <p class="first">What special skills do you need to be a language coach? Just a good attitude and a bit of patience.
       </p>
-      <a href="#coaching" class="button">More About Coaching</a>
+      <a href="http://language-up.com/?page_id=12" class="button">More About Coaching</a>
     </div>
     <div class="large-4 med-12 columns">
       <h3>It's Free</h3>
       <p class="first">
         We're just getting started, and for a short time we're giving free practice sessions in exchange for your honest feedback.
       </p>
-      <a href="#welcome-video" class="button">Try For Free</a>
+      <a href="http://language-up.com/?page_id=17" class="button">Try For Free</a>
     </div>
    </div>
 
@@ -66,7 +66,7 @@ get_header(); ?>
 
 <div id="load-view" class="overlay">
   <div class="loading">
-    <div class="load-text">We'd like to help you speak <span id="load-language"></span></div>
+    <div class="load-text">Searching for people who speak <span id="load-language"></span></div>
     <img src="/wp-content/uploads/2014/10/talking-anim.gif"/>
   </div>
 </div>
