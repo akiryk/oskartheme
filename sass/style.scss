@@ -37,6 +37,10 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.entry-footer {
+  visibility: hidden;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: $sans-stack;
 }
